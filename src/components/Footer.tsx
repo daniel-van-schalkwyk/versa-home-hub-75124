@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import logo from "@/assets/versanode-logo.png";
 
 export const Footer = () => {
   return (
@@ -6,9 +7,11 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">
-              VersaNode<span className="text-primary">™</span>
-            </h3>
+            <img 
+              src={logo} 
+              alt="VersaNode Logo" 
+              className="h-12 w-auto"
+            />
             <p className="text-sm text-muted-foreground">
               The ultimate Linux-powered microserver for your smart home and beyond.
             </p>

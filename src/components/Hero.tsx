@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Rocket, Github } from "lucide-react";
 import heroImage from "@/assets/versanode-hero.png";
+import logo from "@/assets/versanode-logo.png";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Hero = () => {
@@ -14,6 +15,12 @@ export const Hero = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
+            <img 
+              src={logo} 
+              alt="VersaNode Logo" 
+              className="h-16 w-auto mb-4"
+            />
+            
             <div className="inline-block">
               <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                 Launching on Kickstarter Soon
