@@ -15,12 +15,6 @@ export const Hero = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <img 
-              src={logo} 
-              alt="VersaNode Logo" 
-              className="h-16 w-auto mb-4"
-            />
-            
             <div className="inline-block">
               <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                 Launching on Kickstarter Soon
@@ -74,13 +68,22 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="absolute -inset-4 bg-gradient-accent opacity-20 blur-3xl rounded-full"></div>
-            <img 
-              src={heroImage} 
-              alt="VersaNode Home & Business microserver with glowing LED indicators" 
-              className="relative rounded-2xl shadow-glow border border-border/50"
-            />
+          <div className="relative animate-fade-in space-y-6" style={{ animationDelay: '0.2s' }}>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-accent opacity-20 blur-3xl rounded-full"></div>
+              <img 
+                src={heroImage} 
+                alt="VersaNode Home & Business microserver with glowing LED indicators" 
+                className="relative rounded-2xl shadow-glow border border-border/50"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src={logo} 
+                alt="VersaNode Logo" 
+                className="h-20 w-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
