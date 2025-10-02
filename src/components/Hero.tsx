@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Rocket, Github } from "lucide-react";
-import heroImage from "@/assets/versanode-hero.jpg";
+import heroImage from "@/assets/versanode-hero.png";
 
 export const Hero = () => {
   return (

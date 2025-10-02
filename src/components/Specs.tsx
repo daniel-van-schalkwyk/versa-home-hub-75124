@@ -35,7 +35,7 @@ const specs = [
   {
     icon: Usb,
     label: "I/O Ports",
-    value: "MicroHDMI, USB",
+    value: "HDMI Mini, USB",
     detail: "USB 3.0, USB 2.0 connectivity"
   },
   {
@@ -47,13 +47,13 @@ const specs = [
   {
     icon: Cable,
     label: "Submodules",
-    value: "Local Bus / Wi-Fi",
+    value: "Local Bus, Wi-Fi",
     detail: "Connect modules via direct bus or wireless"
   },
   {
     icon: Shield,
     label: "Security",
-    value: "TPM",
+    value: "TPM 2.0",
     detail: "Trusted Platform Module for secure operations"
   },
   {
@@ -65,7 +65,7 @@ const specs = [
   {
     icon: Ruler,
     label: "Dimensions",
-    value: "175 × 125 × 28mm",
+    value: "(H x L x W): 105 mm x 103 mm x 47 mm",
     detail: "Compact form factor for any space"
   }
 ];
