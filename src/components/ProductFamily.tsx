@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Server, Box, Activity, Gauge, Zap, HardDrive, Cable, Waypoints } from "lucide-react";
+import productAssembly from "@/assets/product-family-assembly.png";
 
 const products = [
   {
@@ -87,6 +88,18 @@ export const ProductFamily = () => {
                 <p className="text-muted-foreground">{product.description}</p>
               </Card>
             ))}
+          </div>
+
+          {/* Product Assembly Image */}
+          <div className="flex justify-center animate-fade-in my-12">
+            <div className="relative max-w-5xl w-full">
+              <div className="absolute -inset-4 bg-gradient-accent opacity-10 blur-3xl rounded-full"></div>
+              <img 
+                src={productAssembly}
+                alt="VersaNode product family assembly showing controller and submodules connected together"
+                className="relative rounded-2xl shadow-glow border border-border/50 w-full"
+              />
+            </div>
           </div>
 
           {/* Submodules */}
