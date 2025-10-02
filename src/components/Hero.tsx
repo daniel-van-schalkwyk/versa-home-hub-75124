@@ -68,22 +68,18 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-fade-in space-y-6" style={{ animationDelay: '0.2s' }}>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-accent opacity-20 blur-3xl rounded-full"></div>
-              <img 
-                src={heroImage} 
-                alt="VersaNode Home & Business microserver with glowing LED indicators" 
-                className="relative rounded-2xl shadow-glow border border-border/50"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src={logo} 
-                alt="VersaNode Logo" 
-                className="h-20 w-auto"
-              />
-            </div>
+          <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="absolute -inset-4 bg-gradient-accent opacity-20 blur-3xl rounded-full"></div>
+            <img 
+              src={heroImage} 
+              alt="VersaNode Home & Business microserver with glowing LED indicators" 
+              className="relative rounded-2xl shadow-glow border border-border/50"
+            />
+            <img 
+              src={logo} 
+              alt="VersaNode Logo" 
+              className="absolute top-4 left-4 h-16 md:h-20 w-auto z-10"
+            />
           </div>
         </div>
       </div>
