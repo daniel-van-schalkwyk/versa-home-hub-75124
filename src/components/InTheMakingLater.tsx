@@ -10,7 +10,7 @@ export const InTheMakingLater = () => {
       description="Refining the architecture, optimizing performance, and integrating all components into a cohesive system. Our engineering team worked tirelessly to enhance every aspect, from power efficiency to thermal management."
       image={laterImage}
       icon={Zap}
-      phase="Phase 2: Later Development"
+      phase="Development Journey: Later Development"
       reverse={true}
     />
   );

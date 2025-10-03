@@ -10,7 +10,7 @@ export const InTheMakingPrototype = () => {
       description="The culmination of our engineering efforts - a polished, production-ready prototype ready to change the game. Every detail has been refined, tested, and perfected to deliver the ultimate VersaNode experience."
       image={prototypeImage}
       icon={Sparkles}
-      phase="Phase 3: Final Prototype"
+      phase="Development Journey: Final Prototype"
       reverse={false}
     />
   );
