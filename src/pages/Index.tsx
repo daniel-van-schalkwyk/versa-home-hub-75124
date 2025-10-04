@@ -8,6 +8,7 @@ import { Specs } from "@/components/Specs";
 import { Ecosystem } from "@/components/Ecosystem";
 import { ProductFamily } from "@/components/ProductFamily";
 import { ContainerizedSoftware } from "@/components/ContainerizedSoftware";
+import { VersaNodeOS } from "@/components/VersaNodeOS";
 import { UseCases } from "@/components/UseCases";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
@@ -25,6 +26,7 @@ const Index = () => {
       <Ecosystem />
       <ProductFamily />
       <ContainerizedSoftware />
+      <VersaNodeOS />
       <UseCases />
       <CTA />
       <Footer />
