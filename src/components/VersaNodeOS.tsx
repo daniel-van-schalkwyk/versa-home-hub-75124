@@ -18,7 +18,7 @@ export const VersaNodeOS = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A purpose-built, 64-bit Raspberry Pi OS image with our hardware drivers baked in.
+            A purpose-built, lightweight headless 64-bit Raspberry Pi OS image with our hardware drivers baked in.
           </p>
         </div>
 
