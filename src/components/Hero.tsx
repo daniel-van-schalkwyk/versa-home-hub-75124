@@ -29,6 +29,10 @@ export const Hero = () => {
               </span>
             </h1>
             
+            <p className="text-lg text-muted-foreground/90 max-w-xl">
+              Home Automation • Home AI • Home Connectivity • Home Server
+            </p>
+            
             <p className="text-xl text-muted-foreground max-w-xl font-medium">
               The all-in-one smart hub that connects, expands, and adapts to your world.
             </p>
