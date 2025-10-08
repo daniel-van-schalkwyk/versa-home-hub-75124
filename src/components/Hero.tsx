@@ -29,12 +29,16 @@ export const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-xl text-muted-foreground max-w-xl">
-              RPI CM5 powered microserver for home automation, NAS, hotspot, P2P VPN, and much more. Managed via VersaNode webserver with pre-built container packages. Expandable with local or remote WiFi submodules.
+            <p className="text-xl text-muted-foreground max-w-xl font-medium">
+              The all-in-one smart hub that connects, expands, and adapts to your world.
+            </p>
+            
+            <p className="text-lg text-muted-foreground/90 max-w-xl">
+              Engineered for expansion — with SSD, TPU, or eSIM modules, local or remote I/O modules, and multi-network connectivity via eSIM, Wi-Fi 7, and dual Gigabit LAN.
             </p>
             
             <p className="text-lg text-muted-foreground/80 max-w-xl">
-              Expandable storage with M.2 submodule and enhanced processing with TPU acceleration.
+              A powerful Linux-based core with a web dashboard that puts virtualized apps at your fingertips.
             </p>
             
             <div className="flex flex-wrap gap-4">
