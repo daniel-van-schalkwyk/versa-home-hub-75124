@@ -30,7 +30,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground/90 max-w-xl">
-              Home Automation • Home AI • Home Connectivity • Home Server
+              Home Server <span className="font-bold">•</span> Home Automation <span className="font-bold">•</span> Home AI <span className="font-bold">•</span> Home Connectivity
             </p>
             
             <p className="text-xl text-muted-foreground max-w-xl font-medium">
