@@ -18,10 +18,10 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero />
       <ChristmasGift />
+      <Features />
       <InTheMakingEarly />
       <InTheMakingLater />
       <InTheMakingPrototype />
-      <Features />
       <Specs />
       <Ecosystem />
       <ProductFamily />
