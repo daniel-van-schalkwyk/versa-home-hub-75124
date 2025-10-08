@@ -38,7 +38,7 @@ export const Hero = () => {
             </p>
             
             <p className="text-lg text-muted-foreground/80 max-w-xl">
-              A powerful Linux-based core with a web dashboard that puts virtualized apps at your fingertips.
+              Packing the powerful Raspberry Pi CM5 module with a web dashboard that simplifies Linux for non-technical users through pre-developed, community-maintained application containers.
             </p>
             
             <div className="flex flex-wrap gap-4">
