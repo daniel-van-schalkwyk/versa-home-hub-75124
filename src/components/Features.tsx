@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { 
   Wifi, 
   Shield, 
@@ -6,74 +7,93 @@ import {
   Zap, 
   Home, 
   Brain,
-  Wrench,
   Network,
-  Container,
+  BarChart,
+  Database,
+  MessageSquare,
+  Code,
   Film,
-  Lock,
-  Plug
+  Server,
+  Image,
+  GitBranch,
+  ExternalLink
 } from "lucide-react";
 
 const features = [
   {
-    icon: Wifi,
-    title: "IoT Gateway",
-    description: "Connect and control all your smart home devices seamlessly"
+    icon: Home,
+    title: "Home Assist",
+    description: "Home Automation"
   },
   {
-    icon: Shield,
-    title: "Secure VPN",
-    description: "Access your home network securely from anywhere"
-  },
-  {
-    icon: HardDrive,
-    title: "Network Storage",
-    description: "High-speed NAS for all your photos, videos, and files"
+    icon: GitBranch,
+    title: "NodeRed",
+    description: "Flow-Based Development tool"
   },
   {
     icon: Zap,
-    title: "Energy Monitor",
-    description: "Track and optimize your home power consumption"
+    title: "OpenEMS",
+    description: "Energy Management"
   },
   {
-    icon: Home,
-    title: "Home Automation",
-    description: "Control lights, thermostats, and smart devices"
-  },
-  {
-    icon: Brain,
-    title: "AI/ML Ready",
-    description: "Run AI assistants and smart analytics at home"
-  },
-  {
-    icon: Wrench,
-    title: "Predictive Maintenance",
-    description: "Monitor system health and prevent issues before they happen"
+    icon: Wifi,
+    title: "Wireless APN",
+    description: "Wireless Access Point Network"
   },
   {
     icon: Network,
     title: "Mesh Network",
-    description: "Create whole-home WiFi coverage with multiple nodes"
+    description: "Distributed network connectivity"
   },
   {
-    icon: Container,
-    title: "Docker Apps",
-    description: "Run any application in containers via simple dashboard"
+    icon: Brain,
+    title: "Machine Learning",
+    description: "AI and ML capabilities"
+  },
+  {
+    icon: BarChart,
+    title: "Analytics",
+    description: "Data analysis and visualisation"
+  },
+  {
+    icon: Database,
+    title: "Database",
+    description: "Data storage and management"
+  },
+  {
+    icon: Shield,
+    title: "Netbird VPN Peer",
+    description: "Secure VPN connectivity"
+  },
+  {
+    icon: MessageSquare,
+    title: "MQTT Broker and Client",
+    description: "Messaging protocol for IoT"
+  },
+  {
+    icon: HardDrive,
+    title: "NAS",
+    description: "Network Access Storage"
+  },
+  {
+    icon: Code,
+    title: "Development",
+    description: "Python, C, C++"
   },
   {
     icon: Film,
     title: "Media Server",
-    description: "Stream your media library to any device in your home"
+    description: "Stream your media library"
   },
   {
-    icon: Lock,
-    title: "Hardware Security",
-    description: "TPM-based encryption keeps your data safe"
+    icon: Server,
+    title: "Web Server",
+    description: "Host web applications"
   },
   {
-    icon: Plug,
-    title: "PoE Powered",
-    description: "Single cable for power and network - clean setup"
+    icon: Image,
+    title: "Photo Manager",
+    description: "Organize and manage photos"
   }
 ];
 
@@ -102,6 +122,25 @@ export const Features = () => {
               <p className="text-sm text-muted-foreground">{feature.description}</p>
             </Card>
           ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <Button 
+            variant="outline" 
+            size="lg"
+            asChild
+            className="group"
+          >
+            <a 
+              href="https://github.com/Versa-Node/container-packages" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2"
+            >
+              and much more (community packages)
+              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
