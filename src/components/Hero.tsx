@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Rocket, Github } from "lucide-react";
+import { Rocket, Github, Server, Home, Brain, Wifi } from "lucide-react";
 import heroImage from "@/assets/versanode-hero.png";
 import logo from "@/assets/versanode-logo.png";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -29,10 +29,6 @@ export const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-lg text-muted-foreground/90 max-w-xl">
-              Home Server <span className="font-bold">•</span> Home Automation <span className="font-bold">•</span> Home AI <span className="font-bold">•</span> Home Connectivity
-            </p>
-            
             <p className="text-xl text-muted-foreground max-w-xl font-medium">
               The all-in-one smart hub that connects, expands, and adapts to your world.
             </p>
@@ -56,22 +52,30 @@ export const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex gap-8 pt-4">
-              <div>
-                <div className="text-3xl font-bold text-primary">64-bit</div>
-                <div className="text-sm text-muted-foreground">Quad-Core 2.4GHz</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Server className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold">Home Server</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">16 GB</div>
-                <div className="text-sm text-muted-foreground">LPDDR4-3200 RAM</div>
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Home className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold">Home Automation</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">64 GB</div>
-                <div className="text-sm text-muted-foreground">eMMC Storage</div>
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Brain className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold">Home AI</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">12-24V</div>
-                <div className="text-sm text-muted-foreground">Solar Ready</div>
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Wifi className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold">Home Connectivity</div>
               </div>
             </div>
           </div>
