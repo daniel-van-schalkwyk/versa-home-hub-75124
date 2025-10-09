@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Cpu, HardDrive, Zap, Clock, Usb, Wifi, Ruler, Cable, Shield, Workflow, Wind } from "lucide-react";
+import productImage from "@/assets/product-family-assembly.png";
 
 const specs = [
   {
@@ -81,6 +82,14 @@ export const Specs = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Powered by the latest Raspberry Pi Compute Module technology
           </p>
+        </div>
+
+        <div className="mb-12 flex justify-center animate-fade-in">
+          <img 
+            src={productImage} 
+            alt="VersaNode Product Assembly" 
+            className="rounded-lg shadow-2xl max-w-2xl w-full"
+          />
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
