@@ -75,17 +75,15 @@ const specs = [
 
 export const Specs = () => {
   const [showSpecs, setShowSpecs] = useState(false);
-  const [imageVisible, setImageVisible] = useState(true);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (sectionRef.current) {
+      if (sectionRef.current && !showSpecs) {
         const rect = sectionRef.current.getBoundingClientRect();
         const scrollProgress = Math.max(0, Math.min(1, -rect.top / (rect.height * 0.3)));
         
         if (scrollProgress > 0.3) {
-          setImageVisible(false);
           setShowSpecs(true);
         }
       }
@@ -93,15 +91,14 @@ export const Specs = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [showSpecs]);
 
   const handleShowSpecs = () => {
-    setImageVisible(false);
     setShowSpecs(true);
   };
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 relative bg-muted/20 min-h-screen">
+    <section ref={sectionRef} className="py-24 px-4 relative bg-muted/20">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -112,20 +109,16 @@ export const Specs = () => {
           </p>
         </div>
 
-        <div 
-          className={`transition-all duration-700 ${
-            imageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none absolute'
-          }`}
-        >
-          <div className="mb-8 flex justify-center animate-fade-in">
-            <img 
-              src={productImage} 
-              alt="VersaNode Product Assembly" 
-              className="rounded-lg shadow-2xl max-w-2xl w-full"
-            />
-          </div>
-          
-          <div className="text-center">
+        <div className="mb-8 flex justify-center animate-fade-in">
+          <img 
+            src={productImage} 
+            alt="VersaNode Product Assembly" 
+            className="rounded-lg shadow-2xl max-w-2xl w-full"
+          />
+        </div>
+        
+        {!showSpecs && (
+          <div className="text-center mb-12 animate-fade-in">
             <Button
               variant="outline"
               size="lg"
@@ -136,11 +129,11 @@ export const Specs = () => {
               <ChevronDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
           </div>
-        </div>
+        )}
         
         <div 
           className={`transition-all duration-700 ${
-            showSpecs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            showSpecs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 max-h-0 overflow-hidden'
           }`}
         >
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
