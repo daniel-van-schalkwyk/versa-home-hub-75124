@@ -11,6 +11,7 @@ import { ContainerizedSoftware } from "@/components/ContainerizedSoftware";
 import { VersaNodeOS } from "@/components/VersaNodeOS";
 import { UseCases } from "@/components/UseCases";
 import { CTA } from "@/components/CTA";
+import { EmailSignup } from "@/components/EmailSignup";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -29,6 +30,7 @@ const Index = () => {
       <VersaNodeOS />
       <UseCases />
       <CTA />
+      <EmailSignup />
       <Footer />
     </div>
   );
